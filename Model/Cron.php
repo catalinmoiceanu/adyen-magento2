@@ -714,7 +714,7 @@ class Cron
         }
         if (isset($ccLast4) && $ccLast4 != "") {
             // this field is column in db by core
-            $this->_order->getPayment()->setccLast4($ccLast4);
+            $this->_order->getPayment()->setCcLast4($ccLast4);
         }
         if (isset($avsResult) && $avsResult != "") {
             $this->_order->getPayment()->setAdditionalInformation('adyen_avs_result', $avsResult);
